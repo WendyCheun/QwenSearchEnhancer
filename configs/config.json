@@ -1,0 +1,18 @@
+{
+    "model_name_or_path": "/remote-home1/share/models/Qwen2.5-0.5B-Instruct",
+    "train_file": "/remote-home1/wxzhang/QwenSearchEnhancer/data/generated/qa_dataset_to_train/train.json",
+    "output_dir": "/remote-home1/wxzhang/QwenSearchEnhancer/data/generated/qa_dataset_train_ok",
+    "num_train_epochs": 3,
+    "per_device_train_batch_size": 2,
+    "gradient_accumulation_steps": 16,
+    "learning_rate": 1e-4,
+    "max_seq_length": 1024,
+    "use_lora": true,
+    "lora_r": 16,
+    "search_loss_weight": 0.3,
+    "logging_steps": 10000,
+    "save_strategy": "steps",
+    "save_steps": 100,
+    "fp16": true,
+    "gradient_checkpointing": true
+}
